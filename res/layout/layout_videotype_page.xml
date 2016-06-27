@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+   	>
+	<!-- <ScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    > -->
+	    <GridLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:rowCount="2" 
+	        android:columnCount="7"
+	        android:paddingLeft="45dp"
+	        android:paddingRight="45dp">
+
+	        <LinearLayout
+	            android:id="@+id/metroItem1"
+	            android:layout_width="@dimen/item_width"
+	            android:layout_height="@dimen/item_height"
+	            android:layout_margin="2dp"
+	            android:background="@color/nowpublic"
+	            android:text="1" />
+ 
+        	 <LinearLayout  
+        		android:id="@+id/metroItem2"  
+        		android:text="1"
+        		android:layout_columnSpan="2" 
+        		android:layout_gravity="fill"
+        		android:layout_width="@dimen/item_dwidth"
+	            android:layout_height="@dimen/item_height" 
+	            android:background="@color/blue"
+	            android:layout_margin="2dp"
+	            /> 
+        	 <LinearLayout  
+        		android:id="@+id/metroItem4"  
+        		android:text="1"
+        		android:layout_columnSpan="2" 
+        		android:layout_gravity="fill"
+        		android:layout_width="@dimen/item_dwidth"
+	            android:layout_height="@dimen/item_height" 
+	            android:background="@color/clean"
+	            android:layout_margin="2dp"/> 
+        	 <LinearLayout  
+        		android:id="@+id/metroItem6"  
+        		android:text="1"
+        		android:layout_columnSpan="2" 
+        		android:layout_gravity="fill"
+        		android:layout_width="@dimen/item_dwidth"
+	            android:layout_height="@dimen/item_height" 
+	            android:background="@color/camera2"
+	            android:layout_margin="2dp"/> 
+        	 <LinearLayout  
+        		android:id="@+id/metroItem8"  
+        		android:text="1"
+        		android:layout_width="@dimen/item_width"
+	            android:layout_height="@dimen/item_height" 
+	            android:background="@color/chat"
+	            android:layout_margin="2dp"/> 
+        	 <LinearLayout  
+        		android:id="@+id/metroItem9"  
+        		android:text="1"
+        		android:layout_columnSpan="2" 
+        		android:layout_gravity="fill"
+        		android:layout_width="@dimen/item_dwidth"
+	            android:layout_height="@dimen/item_height"
+	            android:background="@color/green" 
+	            android:layout_margin="2dp"
+        		/> 
+
+        	 <LinearLayout  
+        		android:id="@+id/metroItem11"  
+        		android:text="1"
+        		android:layout_width="@dimen/item_width"
+	            android:layout_height="@dimen/item_height"
+	            android:background="@color/house"
+	            android:layout_margin="2dp"/> 
+
+        	 <LinearLayout
+        	     android:id="@+id/metroItem12"
+        	     android:layout_width="@dimen/item_width"
+        	     android:layout_height="@dimen/item_height"
+        	     android:background="@color/shoppingcart"
+        	     android:text="1" 
+        	     android:layout_margin="2dp"/>
+ 
+        	 <LinearLayout  
+        		android:id="@+id/metroItem13"  
+        		android:text="1"
+        		android:layout_columnSpan="2" 
+        		android:layout_gravity="fill"
+        		android:layout_width="@dimen/item_width"
+	            android:layout_height="@dimen/item_height"
+	            android:background="@color/police"
+	            android:layout_margin="2dp"/> 
+	    </GridLayout>
+    <!-- </ScrollView> -->
+</HorizontalScrollView>

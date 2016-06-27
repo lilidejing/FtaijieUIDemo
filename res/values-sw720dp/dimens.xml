@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="pager_margin">0dp</dimen>
+    <dimen name="tabtite_fontsize">30sp</dimen>
+    <dimen name="tabframe_width">200dp</dimen>
+    <dimen name="tabframe_height">120dp</dimen>
+    <dimen name="tabframe_left">100dp</dimen>
+    
+    <dimen name="metroPager_top">20dp</dimen>
+    <dimen name="metroitem_width">404dp</dimen>
+    <dimen name="metroitem_height">190dp</dimen>
+    <dimen name="metroitemicon_top">40dp</dimen>
+    <dimen name="metroitemicon_width">90dp</dimen>
+    <dimen name="metroitemicon_height">90dp</dimen>
+    <dimen name="metroitem_fontsize">25sp</dimen>
+    
+    <dimen name="videotypeframel_width">240dp</dimen>
+    <dimen name="videotypeitem_height">64dp</dimen>
+    <dimen name="videotypeitem_font">28sp</dimen>
+    <dimen name="videotypeframel_top">15sp</dimen>
+    <dimen name="videotypeframe_bottom">40sp</dimen>
+    <dimen name="videotypeframer_top">40dp</dimen>
+    
+    <dimen name="filterframe_height">250dp</dimen>
+    <dimen name="filterdel_width">200dp</dimen>
+    <dimen name="filterdel_height">200dp</dimen>
+      <dimen name="filterdel_padding">25dp</dimen>
+    
+    <dimen name="item_dwidth">400dp</dimen>
+    <dimen name="item_width">200dp</dimen>
+    <dimen name="item_height">200dp</dimen>
+    <dimen name="videotype_iconwidth">60dp</dimen>
+    <dimen name="videotype_iconheight">60dp</dimen>
+    <dimen name="videotype_fontsize">28sp</dimen>
+    <dimen name="gridvideolistitem_picwidth">180dp</dimen>
+    <dimen name="gridvideolistitem_picheight">240dp</dimen>
+    <dimen name="gridvideolistitem_detailfont">20sp</dimen>
+    <dimen name="gridvideolistitem_namefont">25sp</dimen>
+
+</resources>

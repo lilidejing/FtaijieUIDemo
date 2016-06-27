@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical" >
+
+	<LinearLayout
+	    android:id="@+id/layout_mainvideolist"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal" >
+	
+	    <LinearLayout
+	        android:id="@+id/leftL"
+	        android:layout_width="@dimen/videotypeframel_width"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical" 
+	        android:layout_marginTop="@dimen/videotypeframel_top">
+			<RelativeLayout
+			    android:layout_gravity="center_horizontal"
+			    android:layout_height="wrap_content"
+			    android:layout_width="wrap_content">
+			    <ImageView
+	            	android:id="@+id/iconvideotpye"
+	            	android:layout_width="@dimen/videotype_iconwidth"
+	            	android:layout_height="@dimen/videotype_iconheight"
+	            	android:scaleType="centerInside"
+	            	android:src="@drawable/metro_icon5" />
+				<TextView 
+				    android:id="@+id/stringvideotype" 
+				    android:layout_toRightOf="@+id/iconvideotpye"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="电视剧"
+				    android:textColor="@android:color/white"
+				    android:textSize="@dimen/videotype_fontsize"
+				    android:layout_marginLeft="5dp"
+				    android:layout_centerVertical="true">
+				</TextView>"
+			</RelativeLayout>
+	
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="vertical" 
+			    android:layout_marginBottom="@dimen/videotypeframe_bottom">
+	
+				<ImageView
+				    android:id="@+id/imageView1"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:src="@drawable/up_icon" 
+				    android:layout_marginTop="@dimen/videotypeframel_top"
+				    android:visibility="invisible"/>
+	
+				<ListView
+				    android:id="@+id/listView1"
+				    android:layout_width="fill_parent"
+				    android:layout_height="match_parent"
+				    android:layout_weight="1" 
+				    android:layout_gravity="center_horizontal"
+				    android:layout_marginTop="@dimen/videotypeframel_top">
+	
+				</ListView>
+				<ImageView
+				    android:id="@+id/imageView2"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:src="@drawable/down_icon" 
+				    android:visibility="invisible"
+				    android:layout_marginTop="@dimen/videotypeframel_top"/>
+			</LinearLayout>
+	
+	    </LinearLayout>
+		<View
+	  		android:layout_width="1dp"
+	  		android:layout_height="fill_parent"
+	  		android:background="#FF909090"/>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical" 
+	        android:layout_marginBottom="@dimen/videotypeframe_bottom"
+	        >
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="总共（80部）" 
+	            android:textColor="@android:color/white"
+				android:textSize="@dimen/videotype_fontsize"
+				android:layout_marginLeft="20dp"
+				android:layout_marginTop="@dimen/videotypeframer_top"/>
+	
+	        <GridView
+	            android:id="@+id/gridView1"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:numColumns="3" >
+	        </GridView>
+	
+	    </LinearLayout>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/videofilter"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="@dimen/filterframe_height"
+		android:layout_alignBottom="@id/layout_mainvideolist"
+	    android:orientation="horizontal"
+	    android:background="@drawable/boder">
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical"
+	        android:layout_gravity="center"
+	        android:padding="@dimen/filterdel_padding">
+		    <TextView
+		        android:layout_width="@dimen/filterdel_width"
+		        android:layout_height="@dimen/filterdel_height"
+		        android:layout_gravity="center"
+		        android:background="@drawable/delete_choice" />
+		</LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:orientation="vertical"
+	        android:background="@drawable/boder">
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@android:color/white"
+	            android:textSize="@dimen/videotype_fontsize"
+	            android:text="类型"
+	            android:layout_gravity="center"/>
+
+	        <GridView
+	            android:id="@+id/gridviewfiltertype"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:numColumns="2" >
+
+	        </GridView>
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:orientation="vertical">
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@android:color/white"
+	            android:textSize="@dimen/videotype_fontsize"
+	            android:text="地区"
+	            android:layout_gravity="center"/>
+
+	        <GridView
+	            android:id="@+id/gridviewfilteregion"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:numColumns="2" >
+
+	        </GridView>
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:orientation="vertical"
+	        android:background="@drawable/boder">
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@android:color/white"
+	            android:textSize="@dimen/videotype_fontsize"
+	            android:text="年份"
+	            android:layout_gravity="center"/>
+
+	        <GridView
+	            android:id="@+id/gridviewfilterdate"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:numColumns="2" >
+
+	        </GridView>
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:orientation="vertical">
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@android:color/white"
+	            android:textSize="@dimen/videotype_fontsize"
+	            android:text="排序"
+	            android:layout_gravity="center"/>
+	        <ListView 
+	            android:id="@+id/listfiltersort"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"> 
+	        </ListView>
+	    </LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+  <!--   android:textIsSelectable="true" -->
+	<TextView  
+		   	android:id="@+id/ItemVideo"
+			android:gravity="center"
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/videotypeitem_height"
+			android:textSize="@dimen/videotypeitem_font"
+			android:textColor="@drawable/tab_txtcolor"
+		    >
+	</TextView>
+</RelativeLayout>
